@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Windows Hardning &mdash; NetBox-Documentation</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href="." class="site-name"> NetBox-Documentation</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1 current"><a class="nav-item current" href=".">Windows Hardning</a>
+<ul class="subnav">
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href="." class="site-name"> NetBox-Documentation</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><h1 id="steps-for-windows-hardning">Steps for Windows Hardning</h1>
+<p><strong>A) Setting Hostname</strong></p>
+<p><strong>1) Method 1: Using the GUI</strong></p>
+<p><span style="background-color: yellow;font-weight: bold;" >Open Server Manager:</span></p>
+<p><img alt="" src="images/1.jpg" style="height:600px;width:500px" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" >Click on the ‘Local Server’ from the left sidebar menu and click on the ‘Computer name’.:</span></p>
+<p><img alt="" src="images/2.jpg" style="height:600px;width:750px;border:2px solid black;" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" >The <b>‘System Properties’</b> dialog appears on the screen. Click on the <b>‘Change’</b> button in the ‘Computer Name’ tab.</span></p>
+<p><img alt="" src="images/3.jpg" style="height:600px;width:750px;border:2px solid black;" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" >Enter the server name in the ‘Computer name’ field that you want to use as a server name.</span></p>
+<p><img alt="" src="images/5.jpg" style="height:500px;width:400px;border:2px solid black;" /></p>
+<p><span style="background-color: yellow;font-weight: bold;" >OK , SAVE , Restart Computer and its Done</span></p>
+<hr style="border: 2px solid blue;">
+
+<p><span style="background-color: yellow;font-weight: bold;" >Assign Ip Address to required interfaces </span></br>
+<code>press WIN+R and type ncpa.cpl and hit ok</code></p>
+<p><img alt="" src="images/ip1.jpg" style="height:400px;width:600px;border:2px solid black;" />
+<br><br></p>
+<p><span style="background-color: yellow;font-weight: bold;" >identify interfaces to assign ip address, like below and double clik on it </span></br></p>
+<p><img alt="" src="images/ip3.jpg" style="height:500px;width:800px;border:2px solid black;" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" >On double click you will  get below like dialog box ,click on Properties </span></br></p>
+<p><img alt="" src="images/ip4.jpg" style="height:500px;width:800px;border:2px solid black;" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" > After click on Properties you will  get below like dialog box , now double click on internet protocol version 4</span></br></p>
+<p><img alt="" src="images/ip5.jpg" style="height:600px;width:500px;border:2px solid black;" /></p>
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" > select on red mark and insert your ip and click on save .</span></br></p>
+<p><img alt="" src="images/ip6.jpg" style="height:600px;width:500px;border:2px solid black;" /></p>
+<hr style="border: 2px solid blue;">
+
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" > Check Partitions as per requirnment.</span></br></p>
+<p><img alt="" src="images/partition.jpg" style="height:100px;width:500px;border:2px solid black;" /></p>
+<hr style="border: 2px solid blue;">
+
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" > Check for updates.</span></br>
+go to the seach bar and type update and select check for updates.</p>
+<p><img alt="" src="images/a.jpg" style="height:500px;width:600px;border:2px solid black;" />
+<br><br>
+<b>Clik on check fo rupdates , until you got below message , You are Update!!!<b><br></p>
+<p><img alt="" src="images/b.jpg" style="height:200px;width:600px;border:2px solid black;" />
+<br></p>
+<hr style="border: 2px solid blue;">
+<p><br><br>
+<span style="background-color: yellow;font-weight: bold;" > Power Setting</span></br>
+<br>
+Go to search bar and type Control Panel and clik on it.<br><br>
+<img alt="" src="images/cp.jpg" style="height:500px;width:600px;border:2px solid black;" /></p>
+<p><br>
+Now Clik on category and select small icons.
+<br>
+<img alt="" src="images/cp2.jpg" style="height:400px;width:750px;border:2px solid black;" /></p>
+<p><br>
+Now Clik on Power Option.
+<br>
+<img alt="" src="images/cp3.jpg" style="height:400px;width:1000px;border:2px solid black;" /></p>
+<p><br>
+By default Balanced (recommonded) is selected. 
+Click on Change plan setting.
+<br>
+<img alt="" src="images/cp4.jpg" style="height:500px;width:700px;border:2px solid black;" /></p>
+<p><br>
+A new windows will open , Set both setting as Never and click on Save changes.
+<br>
+<img alt="" src="images/cp5.jpg" style="height:400px;width:600px;border:2px solid black;" /></p>
+<p><br>
+Now Click on Change plan setting as shown below picture.<br>
+<img alt="" src="images/cp6.jpg" style="height:400px;width:800px;border:2px solid black;" />
+<br>
+A new windows will open , Set both setting as Never and click on Save changes.
+<br>
+<img alt="" src="images/cp5.jpg" style="height:400px;width:600px;border:2px solid black;" /></p>
+<p><br>
+Now click on arrow as show in picture 
+<br>
+<img alt="" src="images/cp7.jpg" style="height:400px;width:700px;border:2px solid black;" /></p>
+<p><br>
+Select change setting 
+<br>
+<img alt="" src="images/cp8.jpg" style="height:400px;width:700px;border:2px solid black;" /></p>
+<p><br>
+A new windows will open , Set both setting as Never and click on Save changes.
+<br>
+<img alt="" src="images/cp5.jpg" style="height:400px;width:600px;border:2px solid black;" /></p>
+<p><br>
+Select change setting 
+<br>
+<img alt="" src="images/cp9.jpg" style="height:400px;width:700px;border:2px solid black;" /></p>
+<p><br>
+A new windows will open , Set both setting as Never and click on Save changes.
+<br>
+<img alt="" src="images/cp5.jpg" style="height:400px;width:600px;border:2px solid black;" /></p>
+<p><br></p>
+<hr style="border: 2px solid blue;">
+<p><span style="background-color: yellow;font-weight: bold;" > Disallow users from turning on/off windows firewall
+</span></br><br>
+Go to the run and type <code>gpedit.msc</code> and hit ok.<br>
+<img alt="" src="images/gp1.jpg" style="height:300px;width:600px;border:2px solid black;" />
+<br><br>
+ Nevigate to the <code>Computer Configuration --&gt; Administrative Templates --&gt; Network --&gt; Network Connections --&gt; Windows Firewall --&gt; Standard Profile</code> 
+ Refer below screenshot.
+ <br>
+ <img alt="" src="images/gp2.jpg" style="height:800px;width:1600px;border:2px solid black;" /><br>
+ <br>
+ Double click on <code>Windows Defender Firewall: Protect all network connections</code> it will open new windows like below.
+ <br>Select <code>Enable</code> button and then <code>Apply</code>then<code>Ok</code> <br>
+<img alt="" src="images/gp3.jpg" style="height:500px;width:600px;border:2px solid black;" /><br> 
+<br></p>
+<hr style="border: 2px solid blue;">
+<p><br>
+<span style="background-color: yellow;font-weight: bold;" > Digitally sign communications (always) <span>
+<br></p>
+<p>Go to the run and type <code>gpedit.msc</code> and hit ok.</p>
+<p><br>
+<img alt="" src="images/gp1.jpg" style="height:300px;width:600px;border:2px solid black;" /><br>
+<br>Nevigate to path <code>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</code>
+Refer below screen
+<br>
+<img alt="" src="images/gp5.jpg" style="height:800px;width:1200px;border:2px solid black;" /><br>
+<br>
+Double click on <code>Microsoft network server: Digitally sign communications (always)</code> By default its disabled , make it enable <code>Apply</code> then <code>OK.</code><br></p>
+<p><img alt="" src="images/gp6.jpg" style="height:500px;width:400px;border:2px solid black;" /><br></p>
+<hr style="border: 2px solid blue;">
+<p><br>
+<span style="background-color: yellow;font-weight: bold;" > Enable the virtualization based security  <span>
+<br></p>
+<p>Go to the run and type <code>gpedit.msc</code> and hit ok.
+<br></p>
+<p><img alt="" src="images/gp1.jpg" style="height:300px;width:600px;border:2px solid black;" /></p>
+<p><br>
+Nevigate to path <code>Computer Configuration &gt; Administrative Templates &gt; System &gt; Device Guard.</code>
+Click on Device Guard and on right side you will see <code>Turn On virtualisation Based Security.</code>
+By default its Not Configured. See below image.
+<br></p>
+<p><img alt="" src="images/vs1.jpg" style="height:500px;width:950px;border:2px solid black;" />
+<br>
+<br>
+Click on <code>Turn On virtualisation Based Security.</code> and  select <code>Enable</code> then <code>Apply</code> and <code>OK</code>
+<br>
+<img alt="" src="images/vs2.jpg" style="height:700px;width:700px;border:2px solid black;" /></p>
+<p><br></p>
+<hr style="border: 2px solid blue;">
+<p><br></p></div>
+                <footer>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js"></script>
+    <script src="search/main.js"></script>
+</body>
+
+</html>
