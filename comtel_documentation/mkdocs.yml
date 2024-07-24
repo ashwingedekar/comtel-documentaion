@@ -1,0 +1,13 @@
+site_name: NetBox-Documentation
+dev_addr: 0.0.0.0:8000
+theme: ivory                         #dracula
+nav:
+  - Windows Hardning: index.md
+extra_css:
+  - 'custom.css'
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
